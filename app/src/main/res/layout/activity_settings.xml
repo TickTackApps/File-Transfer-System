@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+
+    <ImageButton
+        android:id="@+id/scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="24dp"
+        android:background="@color/white"
+        android:contentDescription=""
+        app:srcCompat="@drawable/product" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigator"
+        style="@style/Widget.Design.BottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/white"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/adress_navigation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ip_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ip1"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:cursorVisible="true"
+                android:ems="3"
+                android:gravity="center"
+                android:hint="0-255"
+                android:inputType="number"
+                android:maxEms="3"
+                android:maxLength="3"
+                android:minEms="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <EditText
+                android:id="@+id/ip2"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:cursorVisible="true"
+                android:ems="3"
+
+                android:gravity="center"
+                android:hint="0-255"
+
+                android:inputType="number"
+                android:maxEms="3"
+
+                android:maxLength="3"
+                android:minEms="1"
+                android:textColor="@color/black"
+
+
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <EditText
+                android:id="@+id/ip3"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:cursorVisible="true"
+                android:ems="3"
+                android:gravity="center"
+
+                android:hint="0-255"
+                android:inputType="number"
+                android:maxEms="3"
+                android:maxLength="3"
+                android:minEms="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="24dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <EditText
+                android:id="@+id/ip4"
+                style="@style/Widget.AppCompat.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:cursorVisible="true"
+                android:ems="3"
+                android:gravity="center"
+                android:hint="0-255"
+                android:inputType="number"
+                android:maxEms="3"
+                android:maxLength="3"
+                android:minEms="1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hintColor"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textSize="24dp"
+
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/hostname"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="36dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:inputType="textUri"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:visibility="gone"
+
+            />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:minEms="4"
+            android:maxLength="8"
+            android:padding="24dp"
+            android:layout_margin="24dp"
+            style="@style/Widget.AppCompat.TextView"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+            android:drawablePadding="10dp"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:inputType="textPassword"
+            android:maxEms="8"
+            android:importantForAccessibility="no"
+            android:hint="Enter Password"
+            android:textColorHint="@color/hintColor"
+            >
+
+
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:text="Save"
+        android:layout_margin="36dp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="!! WARNING !!\nThis Activity is under development and I hope I will complete it as soon as possible"
+        android:textColor="#FF0000"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
